@@ -1,7 +1,8 @@
 export const business = {
   name: "Garcon Barber",
   tagline: "Premium barbershop on Skolgatan",
-  description: "Premium barbershop focused on traditional hot-towel shaves and precision men's grooming.",
+  description:
+    "Varmt välkommen till Garcon! Traditionell knivrakning, varma omslag, skäggtrim och precision klippning — utfört av erfarna barberare på Skolgatan 43 i Uppsala.",
   category: "Hair Salon",
   address: {
     street: "Skolgatan 43",
@@ -15,13 +16,16 @@ export const business = {
   emailLink: "mailto:info@garcon.se" as string | null,
   bookingUrl: "https://www.bokadirekt.se/places/garcon-barber-54580",
   bookingLabel: "Boka på Bokadirekt",
+  websiteUrl: "https://www.garcon.se/" as string | null,
+  heroImage: "/images/hero.jpg",
+  aboutImage: "/images/gallery-3.jpg",
   facebookUrl: null as string | null,
-  instagramUrl: null as string | null,
+  instagramUrl: "https://instagram.com/garconbarber" as string | null,
   owner: "Garcon Barber",
   rating: 4.9,
   reviewCount: 2058,
   foundedYear: 2010,
-  coordinates: { lat: 59.8588, lng: 17.6386 },
+  coordinates: { lat: 59.8624, lng: 17.6326 },
   hours: {
     note: "Ring gärna innan besök.",
     regular: [
@@ -42,8 +46,8 @@ export const business = {
   ],
   usps: [
     {
-      title: "Erfarna stylister",
-      description: "Professionell klippning och styling hos Garcon Barber.",
+      title: "Erfarna barberare",
+      description: "Knivrakning, skin fade och skäggtrim med fokus på hantverk och precision.",
     },
     {
       title: "Centralt läge",
@@ -106,31 +110,52 @@ export const business = {
     },
   ],
   gallery: [
-    { id: 1, label: "Styling", before: "from-[#0D0000] to-[#1A0000]", after: "from-[#CC0000]/40 to-[#1A0000]" },
-    { id: 2, label: "Behandling", before: "from-[#1A0000] to-[#0D0000]", after: "from-[#CC0000]/30 to-[#0D0000]" },
-    { id: 3, label: "Resultat", before: "from-[#0D0000] to-[#1A0000]/80", after: "from-[#CC0000] to-[#1A0000]/50" },
-    { id: 4, label: "Salong", before: "from-[#1A0000]/90 to-[#0D0000]", after: "from-[#CC0000]/50 to-[#CC0000]" },
-    { id: 5, label: "Detalj", before: "from-[#0D0000] to-[#CC0000]/20", after: "from-[#1A0000] to-[#CC0000]/35" },
-    { id: 6, label: "Atmosfär", before: "from-[#1A0000] to-[#CC0000]/25", after: "from-[#CC0000]/60 to-[#0D0000]" },
+    { id: 1, label: "Salongen", image: "/images/gallery-1.jpg" },
+    { id: 2, label: "Skin fade", image: "/images/gallery-2.jpg" },
+    { id: 3, label: "Knivrakning", image: "/images/gallery-3.jpg" },
+    { id: 4, label: "Skäggtrim", image: "/images/gallery-4.jpg" },
+    { id: 5, label: "Hantverk", image: "/images/gallery-5.jpg" },
+    { id: 6, label: "Atmosfär", image: "/images/gallery-6.jpg" },
   ],
   testimonials: [
     {
-      text: "Fantastisk upplevelse hos Garcon Barber. Personalen var professionell och resultatet överträffade förväntningarna.",
-      author: "Kundrecension",
-      source: "Offentligt omdöme, parafraserat",
+      text: "Briljant som vanligt.",
+      author: "Peter E.",
+      source: "Bokadirekt",
+      sourceUrl: "https://www.bokadirekt.se/places/garcon-barber-54580",
       rating: 5,
+      date: "2026-06-16",
     },
     {
-      text: "Rekommenderar Garcon Barber varmt. Snabb service, trevligt bemötande och bra kvalitet till rimligt pris.",
-      author: "Kundrecension",
-      source: "Offentligt omdöme, parafraserat",
+      text: "Otroligt trevliga och noga. Snyggt minst sagt!",
+      author: "Joakim W.",
+      source: "Bokadirekt",
+      sourceUrl: "https://www.bokadirekt.se/places/garcon-barber-54580",
       rating: 5,
+      date: "2026-06-15",
+    },
+    {
+      text: "He did an incredible job! Very friendly and easy to communicate with. I felt super fresh with my new summer cut!",
+      author: "Linus A.",
+      source: "Bokadirekt",
+      sourceUrl: "https://www.bokadirekt.se/places/garcon-barber-54580",
+      rating: 5,
+      date: "2026-06-13",
+    },
+    {
+      text: "Jävligt majjigt med en riktig barberare i stan. Inte så mycket snack utan fokus på hantverket och en rimlig prislapp.",
+      author: "Sebastian K.",
+      source: "Bokadirekt",
+      sourceUrl: "https://www.bokadirekt.se/places/garcon-barber-54580",
+      rating: 5,
+      date: "2026-06-12",
     },
   ],
   about: {
     headline: "Om Garcon Barber",
     paragraphs: [
-      "Premium barbershop focused on traditional hot-towel shaves and precision men's grooming.",
+      "Varmt välkommen till Garcon! Här erbjuder vi allt från traditionell knivrakning och varma omslag till skäggtrim och precision klippning, utfört av erfarna barberare som alltid strävar efter perfektion. Hos oss är atmosfären lika viktig som behandlingen — vi har skapat en plats där du kan koppla av och njuta av riktigt hantverk.",
+      "Garcon är mer än en barbershop – det är en upplevelse. Välkommen till Skolgatan 43 i Uppsala.",
     ],
   },
   faq: [
